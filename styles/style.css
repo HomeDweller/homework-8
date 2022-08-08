@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Staatliches';
+    src: url('/fonts/staatliches-regular-webfont.woff') format('woff'),
+        url('/fonts/staatliches-regular-webfont.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Francosis One';
+    src: url('/fonts/francoisone-regular-webfont.woff') format('woff'),
+        url('/fonts/francoisone-regular-webfont.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('/fonts/ptsans-regular-webfont.woff') format('woff'),
+        url('/fonts/ptsans-regular-webfont.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Farro';
+    src: url('/fonts/farro-light-webfont.woff') format('woff'),
+    url('/fonts/farro-light-webfont.woff2 format') format('woff2');
+    font-style: normal;
+    font-weight: 600px;
+}
+
+@font-face {
+    font-family: 'Tourney';
+    src: url('/fonts/tourney-variablefont_wdthwght-webfont.woff') format('woff'),
+        url('/fonts/tourney-variablefont_wdthwght-webfont.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px; 
+    
+}
+
+
+main {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+h2 {
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    text-transform: uppercase;
+    border-top: #000000;
+    border-width: 23%;
+}
+
+sup {
+    vertical-align: super;
+    font-family: 'Farro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+}
+
+p {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    padding-bottom: 40px;
+}
+
+i {
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+b {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+section {
+    margin-bottom: 70px;
+    
+}
+
+.sections {
+    margin-left: 3%;
+    width: 54%;
+    background-image: url(/img/bg-picture.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    
+}
+
+span {
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+}
+
+header {
+    max-width: 1440px;
+    width: 100%;
+    height: 80px;
+    margin-left: 8%;
+    margin-right: 8%;
+    position: fixed;
+    background-color: #FFF;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 238px;
+    height: 54px;
+}
+
+a {
+    color: #000000;
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.links {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    mix-blend-mode: normal;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    padding-left: 7%;
+    padding-right: 42%;
+
+}
+
+aside {
+    width: max-content;
+    margin-right: 1%;
+    position: -webkit-sticky;
+    position: sticky;
+    align-self: start;
+    top: 32px;
+    background-color: #FFF;
+
+}
+
+li {
+    border-bottom: 1px solid #BDBDBD;
+    padding-top: 70px;
+}
+
+li:first-child {
+    padding-top: 0;
+}
+
+hr {
+    width: 17%;
+    left: 0;
+    margin: 0;
+    border: 8px solid #000000;
+}
+
+@media only screen and (max-width: 320px) {
+    main {
+        flex-direction: column;
+    }
+    aside {
+        top: 50px;
+    }
+    li {
+        padding-top: 30px;
+    }
+}

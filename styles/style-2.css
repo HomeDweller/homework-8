@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Staatliches';
+    src: url('/fonts/staatliches-regular-webfont.woff') format('woff'),
+        url('/fonts/staatliches-regular-webfont.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Francosis One';
+    src: url('/fonts/francoisone-regular-webfont.woff') format('woff'),
+        url('/fonts/francoisone-regular-webfont.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Tourney';
+    src: url('/fonts/tourney-variablefont_wdthwght-webfont.woff') format('woff'),
+        url('/fonts/tourney-variablefont_wdthwght-webfont.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px; 
+    
+}
+
+
+header {
+    max-width: 1440px;
+    width: 100%;
+    height: 80px;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: #FFF;
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+span {
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+}
+
+.logo {
+    width: 238px;
+    height: 54px;
+}
+
+a {
+    color: #000000;
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.links {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    mix-blend-mode: normal;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    padding-left: 7%;
+    padding-right: 42%;
+}
+
+.headling {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.headling hr {
+    width: 100px;
+    left: 0;
+    height: 1px;
+    margin: 20px 20px 20px 0;
+    border: 8px solid #000000;
+}
+
+.headling h2 {
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: space-evenly;
+    width: 1200px;
+    border-top: 1px solid #BFBFBF;
+    border-bottom: 1px solid #BFBFBF;
+}
+
+img:nth-child(-n+4) {
+    margin-top: 20px;
+}
+
+img:nth-child(n+5) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.flip-card {
+    background-color: transparent;
+
+    perspective: 1000px;
+}
+  
+
+.flip-card-inner {
+    position: relative;
+    width: 270px;
+    height: 180px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border: 1px solid #1565D8 10%;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 270px;
+    height: 180px;
+    backface-visibility: hidden;
+}
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+    border: 1px solid #3DB3701A;
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .headling h2 {
+        font-size: 24px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .flip-card-inner {
+        width: 270px;
+        height: 180px;
+    }
+}
